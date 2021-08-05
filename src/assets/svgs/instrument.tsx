@@ -1,6 +1,6 @@
 import React from "react"
 
-const MusicIcon = () => (
+const IntrumentIcon = () => (
     <svg
         width="25"
         height="24"
@@ -50,4 +50,4 @@ const MusicIcon = () => (
         </defs>
     </svg>
 )
-export default MusicIcon
+export default IntrumentIcon
