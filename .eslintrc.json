@@ -20,13 +20,15 @@
     },
     "plugins": ["react", "@typescript-eslint", "prettier"],
     "rules": {
-        "prettier/prettier": "error",
+        "prettier/prettier": ["error",{
+            "endOfLine": "auto"}
+          ],
         "react/jsx-props-no-spreading": "off",
         "global-require": "off",
         "import/prefer-default-export": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
         "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
         "react/react-in-jsx-scope": "off",
-        "react/require-default-props":"off"
+        "react/require-default-props": "off"
     }
 }
