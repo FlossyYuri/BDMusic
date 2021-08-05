@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f8f8;
+    color: #292929;
+}
+body,
+input,
+button,
+textarea {
+    font: 400 1rem "Roboto", sans-serif;
+}
+
+h1,h2, h3,h4{
+    font : 600 1.2rem "Poppins", sans-serif;
+}
