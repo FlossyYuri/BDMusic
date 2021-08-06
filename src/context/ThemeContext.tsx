@@ -1,15 +1,15 @@
 import { createContext, ReactNode, useEffect, useState } from "react"
 
 const getInitialTheme = () => {
-    if (typeof window !== "undefined" && window.localStorage) {
-        const storedPrefs = window.localStorage.getItem("current-theme")
-        if (typeof storedPrefs === "string") {
-            return storedPrefs
-        }
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            return "dark"
-        }
-    }
+    // if (typeof window !== "undefined" && window.localStorage) {
+    //     const storedPrefs = window.localStorage.getItem("current-theme")
+    //     if (typeof storedPrefs === "string") {
+    //         return storedPrefs
+    //     }
+    //     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    //         return "dark"
+    //     }
+    // }
     return "light"
 }
 
