@@ -15,7 +15,7 @@ function App() {
             <BrowserRouter>
                 <Sidebar />
                 <main className="ml-72 min-h-screen">
-                    <div className="ml-72 min-h-screen z-10 fixed left-0 w-full">
+                    <div className="ml-72 min-h-screen z-10 fixed left-0 w-full px-8 pt-8">
                         <Switch>
                             <Route path="/dashboard">
                                 <Dashboard />
