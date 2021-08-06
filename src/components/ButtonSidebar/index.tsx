@@ -11,7 +11,11 @@ type AnchorProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 export function ButtonSidebar({ active, children, to, ...props }: AnchorProps) {
     return (
-        <NavLink to={to} {...props} className="navlink flex py-3 pl-8">
+        <NavLink
+            to={to}
+            {...props}
+            className="navlink flex py-3 pl-8 items-center"
+        >
             {children}
         </NavLink>
     )

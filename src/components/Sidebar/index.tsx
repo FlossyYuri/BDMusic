@@ -10,6 +10,12 @@ import "./style.css"
 export function Sidebar() {
     return (
         <aside className="flex flex-col pt-20 w-72 fixed left-0 h-screen aside-bg z-20">
+            <ButtonSidebar to="/dashboard">
+                <i>
+                    <HomeIcon />
+                </i>
+                <span>Dashboard</span>
+            </ButtonSidebar>
             <h2 className="text-sm ml-8 my-4 font-normal uppercase">
                 Busque sua musica
             </h2>

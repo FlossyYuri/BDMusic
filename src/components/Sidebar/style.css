@@ -10,7 +10,9 @@
 .navlink i {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     width: 54px;
+    height: 32px;
     fill: #636363;
 }
 .navlink.active i {

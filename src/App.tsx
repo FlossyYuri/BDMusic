@@ -2,7 +2,12 @@ import React from "react"
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom"
 import { Sidebar } from "./components/Sidebar"
 import { ThemeProvider } from "./context/ThemeContext"
-import { Home } from "./pages/Home"
+import Dashboard from "./pages/Dashboard"
+import Discs from "./pages/Discs"
+import Formats from "./pages/Formats"
+import Instruments from "./pages/Instruments"
+import Musics from "./pages/Music"
+import Musicians from "./pages/Musician"
 
 function App() {
     return (
@@ -12,26 +17,26 @@ function App() {
                 <main className="ml-72 min-h-screen">
                     <div className="ml-72 min-h-screen z-10 fixed left-0 w-full">
                         <Switch>
-                            <Route path="/">
-                                <Home />
+                            <Route path="/dashboard">
+                                <Dashboard />
                             </Route>
                             <Route path="/musics">
-                                <Home />
+                                <Musics />
                             </Route>
                             <Route path="/musicians">
-                                <Home />
+                                <Musicians />
                             </Route>
                             <Route path="/discs">
-                                <Home />
+                                <Discs />
                             </Route>
                             <Route path="/instruments">
-                                <Home />
+                                <Instruments />
                             </Route>
                             <Route path="/formats">
-                                <Home />
+                                <Formats />
                             </Route>
                             <Route exact path="/">
-                                <Redirect to="/" />
+                                <Redirect to="/dashboard" />
                             </Route>
                         </Switch>
                     </div>
